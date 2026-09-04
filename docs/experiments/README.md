@@ -30,5 +30,5 @@ Git 实际跟踪的 69 份 Markdown 已原文归档，临时运行大文件仍�
 - [0002：评论相关度与程度判断模型](0002-review-judge-training.md)
 - [0003：新 Agent 独立目录验证](0003-independent-extraction.md)
 - [0003：真实多轮最终回答](0003-independent-extraction-transcript.md)
-- [项目整体过程](../../项目整体过程.md)：统一说明架构、数据、测评、数据库和完成度；
+- [项目整体过程](../../README.md)：统一说明架构、数据、测评、数据库和完成度；
 - `../history/legacy-snapshots/`：保存迁移前69份Markdown原文。
