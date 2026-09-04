@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "index_version": "1.0.0",
+  "source_paths": {
+    "review_segments": "C:\\Users\\29072\\PycharmProjects\\AgentSociety\\src\\yelp_agent\\recommendation_v2\\data\\review_evidence\\v1\\segments\\review_segments.parquet",
+    "business_facts": "C:\\Users\\29072\\PycharmProjects\\AgentSociety\\src\\yelp_agent\\recommendation_v2\\data\\business_facts\\v1\\business_facts.parquet"
+  },
+  "source_sha256": {
+    "review_segments": "25a9f7717db5fb4b09d56fe3989e959fd7e815eba95f9a7bcd6a4b61b79d49bb",
+    "business_facts": "1b49271ab7b4c02a072ee54312501ed7f2519d59395967fcfc831401b7afa159"
+  },
+  "model": "local:Qwen3-Embedding-0.6B",
+  "dimension": 1024,
+  "vector_dtype": "float16",
+  "business_count": 2447,
+  "review_count": 499314,
+  "segment_count": 624746,
+  "output_sha256": {
+    "segments": "2b8a331b5f01c244a95d5928bf85f5f2944dd1b0a50d69070c234723c338d248",
+    "embeddings": "5b015e15de43ae647a3cb67c394a587faa54f2ca49061e40c9555a11e2db862c"
+  }
+}

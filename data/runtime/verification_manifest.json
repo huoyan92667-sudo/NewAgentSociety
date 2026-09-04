@@ -1,0 +1,92 @@
+{
+  "schema_version": 2,
+  "verified_at": "2026-09-04T03:49:57.950464+00:00",
+  "files": {
+    "business_facts": {
+      "path": "data/runtime/restaurants/business_facts/v1/business_facts.parquet",
+      "bytes": 200479,
+      "sha256": "dca552a529d32f54860471c7a442ad6258fa41e764b4bd264ba1d744c3c0494b"
+    },
+    "category_rows": {
+      "path": "data/runtime/restaurants/category_catalog/v1/categories.parquet",
+      "bytes": 6584,
+      "sha256": "7a346f76926df8de5076b9bdde272f7de3e0faea39ad83c54e82b40c867735b4"
+    },
+    "category_catalog": {
+      "path": "data/runtime/restaurants/category_catalog/v1/catalog.json",
+      "bytes": 84154,
+      "sha256": "656f95724e7514e882de0bea186d22329984f45614e4da9a3ce0a4b5b105ac17"
+    },
+    "aspect_database": {
+      "path": "data/runtime/restaurants/aspect_profiles/v1/business_aspect_profiles.sqlite3",
+      "bytes": 56311808,
+      "sha256": "acd2281a98086652d761df9d9ba1aa70d43630ce675650bb3e79546412072d93"
+    },
+    "aspect_directions": {
+      "path": "data/runtime/restaurants/aspect_profiles/v1/aspect_directions.json",
+      "bytes": 14424,
+      "sha256": "68043d5d9e371dcadc7d3ff2926853ed317026ed4a3af3fb91ec700643e5a3cb"
+    },
+    "supported_businesses": {
+      "path": "data/runtime/restaurants/aspect_profiles/v1/supported_businesses.json",
+      "bytes": 446672,
+      "sha256": "62eb484d5406a6234e187a19532da9fb036c25a740aa00001f0b300e86e7876b"
+    },
+    "profile_snapshots": {
+      "path": "data/runtime/users/profiles/v1/profile_snapshots.parquet",
+      "bytes": 3387638,
+      "sha256": "4221f4683d35d134d14004154bb1562fc69899f42b92870fe7dcc6fbf6eedda0"
+    },
+    "profile_preferences": {
+      "path": "data/runtime/users/profiles/v1/preference_signals.parquet",
+      "bytes": 20608698,
+      "sha256": "0cf8628368e461ce5d6c1cfeb3c5be71f28615445fa8b80192efd06a58edc975"
+    },
+    "profile_task_map": {
+      "path": "data/runtime/users/profiles/v1/task_profile_map.parquet",
+      "bytes": 2019822,
+      "sha256": "49c2663cf83724702e5f3445486cb15a36344256899b0440785ead1c7ccf098a"
+    },
+    "full_reviews": {
+      "path": "data/runtime/reviews/reviews.parquet",
+      "bytes": 184376081,
+      "sha256": "82b2a1c90ab4e99991e72f8414c8285bc8960bcf98b942b8d6a4ba45ee73d21b"
+    },
+    "review_segments": {
+      "path": "data/runtime/reviews/index/review_segments.parquet",
+      "bytes": 219144799,
+      "sha256": "2b8a331b5f01c244a95d5928bf85f5f2944dd1b0a50d69070c234723c338d248"
+    },
+    "review_embeddings": {
+      "path": "data/runtime/reviews/index/segment_embeddings.npy",
+      "bytes": 1279479936,
+      "sha256": "5b015e15de43ae647a3cb67c394a587faa54f2ca49061e40c9555a11e2db862c"
+    }
+  },
+  "record_counts": {
+    "businesses": 2447,
+    "categories": 319,
+    "profile_snapshots": 27920,
+    "profile_preferences": 891624,
+    "profile_task_links": 27920,
+    "full_reviews": 617718,
+    "review_segments": 624746,
+    "aspect_supported_businesses": 500,
+    "aspect_aspect_scores": 7000,
+    "aspect_reviews": 29488,
+    "aspect_aspect_evidence": 51725
+  },
+  "qdrant_ready": true,
+  "qdrant": {
+    "manifest_path": "data/runtime/reviews/qdrant_hybrid_import_manifest.json",
+    "collection": "new_agent_review_segments_v1",
+    "point_count": 624746,
+    "dimension": 1024,
+    "dense_vector_name": "dense",
+    "bm25_vector_name": "bm25",
+    "manifest_matches_runtime_files": true,
+    "reachable": true,
+    "live_point_count": 624746,
+    "collection_status": "green"
+  }
+}

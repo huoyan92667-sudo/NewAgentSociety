@@ -1,0 +1,12 @@
+{
+  "schema_version": 2,
+  "collection_name": "new_agent_review_segments_v1",
+  "segments_sha256": "2b8a331b5f01c244a95d5928bf85f5f2944dd1b0a50d69070c234723c338d248",
+  "embeddings_sha256": "5b015e15de43ae647a3cb67c394a587faa54f2ca49061e40c9555a11e2db862c",
+  "dimension": 1024,
+  "point_count": 624746,
+  "dense_vector_name": "dense",
+  "bm25_vector_name": "bm25",
+  "bm25_model_name": "qdrant/bm25",
+  "bm25_average_length": 91.09041914634108
+}

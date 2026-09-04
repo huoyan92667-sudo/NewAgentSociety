@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "new-life-agent"
+version = "0.1.0"
+description = "Independent conversational agent with restaurant recommendation tools"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "alembic>=1.14,<2",
+    "asyncpg>=0.30,<1",
+    "duckdb>=1.3,<2",
+    "numpy>=2.0,<3",
+    "openai>=1.100,<2",
+    "pandas>=2.2,<3",
+    "pyarrow>=20,<26",
+    "pydantic>=2.10,<3",
+    "python-dotenv>=1.0,<2",
+    "PyYAML>=6.0,<7",
+    "qdrant-client>=1.15,<2",
+    "SQLAlchemy>=2.0,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "aiosqlite>=0.20,<1",
+    "pytest>=8.3,<9",
+    "pytest-cov>=6,<7",
+]
+local-embedding = [
+    "torch>=2.10,<2.12",
+    "transformers>=4.51,<6",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+testpaths = ["tests"]
+

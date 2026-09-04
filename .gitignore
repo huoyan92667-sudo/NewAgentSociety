@@ -1,0 +1,27 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# 正式运行的大数据和数据库文件可重建或单独迁移，不进入普通 Git。
+data/runtime/postgres/
+data/runtime/qdrant/
+data/runtime/reviews/**/*.parquet
+data/runtime/reviews/**/*.npy
+data/runtime/restaurants/**/*.sqlite3
+data/runtime/users/
+data/raw/
+
+# 训练与评测中的临时运行产物可能很大；确认过的训练集本身需要进入版本管理。
+data/training/**/*.zip
+data/benchmarks/**/runs/
+
+# 模型权重和每次运行结果单独保存。
+models/
+runs/
